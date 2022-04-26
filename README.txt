@@ -1,6 +1,3 @@
-# OpenGL-Basics
-Learning OpenGL
-
 gcc src/main.c -o main -lglfw3 -lgdi32 -lopengl32 -lglew32 -lglu32
 
 glfw3 - é a biblioteca que facilita a criação de janelas evitando configurar tudo do win32api.

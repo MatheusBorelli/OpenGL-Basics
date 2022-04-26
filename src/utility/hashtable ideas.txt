@@ -1,0 +1,47 @@
+typedef struct hashCharIntdata_std
+{
+    char *name;
+    int value;
+    struct hashCharIntdata_std *next;
+}Data;
+
+typedef struct hashtable_std{
+    Data *storage[MAXDATA];
+    unsigned short int count_tables;
+    unsigned short int count_data;
+    unsigned short int index;
+}Hashtable;
+
+
+/////////////////////////////////////////////
+
+
+typedef struct hashdata_std
+{
+    int value;
+    struct hashdata_std *next;
+}Data;
+
+typedef struct hashbucket_std{
+    Data *dataStorage;
+
+    Data *Start;
+    Data *End;
+
+    unsigned int bucket_Size;
+    float growthFactor;
+}Bucket;
+
+typedef struct hashtable_std{
+    Bucket *bucket;
+
+    unsigned int modFactor;
+
+    unsigned int table_Size;
+
+    unsigned int data_Size;
+    unsigned int key_Size;
+
+    unsigned int count_buckets;
+    unsigned int count_data;
+}HashTable;

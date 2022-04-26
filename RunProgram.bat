@@ -1,0 +1,1 @@
+call bin\Release\OpenGL.exe

@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "gcc",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Development\\C\\mingw64\\include",
+                "C:\\Development\\C\\mingw64\\x86_64-w64-mingw32\\include",
+                "C:\\Development\\C\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include",
+                "${workspaceFolder}",
+                "${workspaceFolder}/src/vendor/cimgui",
+                "${workspaceFolder}/src/vendor/cglm",
+                "${workspaceFolder}/src/vendor",
+                "${workspaceFolder}/src"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\Development\\C\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
