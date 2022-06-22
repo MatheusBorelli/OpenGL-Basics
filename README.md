@@ -1,14 +1,33 @@
 # OpenGL-Basics
-Learning OpenGL
+## Why i made this repo?
 
-gcc src/main.c -o main -lglfw3 -lgdi32 -lopengl32 -lglew32 -lglu32
+I made this repo to study OpenGL and learn how renderization works using [Cherno's Tutorials].
 
-glfw3 - é a biblioteca que facilita a criação de janelas evitando configurar tudo do win32api.
 
-gdi32 - Deve ir antes de opengl para exportar as funções de interface do dispositivo gráfico, permitindo desenhar no display de video.
+## Compilation
 
-opengl32 - Api grafica a ser utilizada.
+To compile this project just use the following command in terminal
+```sh 
+make all
+```
 
-glew32 - Pega do driver de video as funçoes do opengl
+## Known Issue
 
-glu32 - biblioteca de utilitarios para o openGl
+AMD drivers for openGL have poor support, so for many searching how to solve flicking textures problem in amd cards, I found that you can make an loop in [fragment shader] to solve this problem.  
+
+## Libs
+
+- [GLFW](https://www.glfw.org/) 
+
+- [cglm](https://github.com/recp/cglm)
+
+- [cimgui](https://github.com/cimgui/cimgui)
+
+- [stb_image](https://github.com/nothings/stb)
+
+## License
+
+[MIT](LICENSE)
+
+[Cherno's Tutorials]: https://www.youtube.com/playlist?list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2
+[fragment shader]: asset/shaders/BasicBatchRender.glsl
