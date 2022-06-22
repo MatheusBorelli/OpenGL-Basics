@@ -10,6 +10,10 @@ To compile this project just use the following command in terminal
 ```sh 
 make all
 ```
+and to run the application just use
+```sh
+make run
+```
 
 ## Known Issue
 
